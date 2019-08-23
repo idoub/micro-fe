@@ -8,7 +8,7 @@ ENV CI=1
 RUN npm config -g set user $(whoami) &&\
 # Install environment dependencies to alpine linux
     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/glibc-2.30-r0.apk &&\
-    apk add --update gtk+3.0 libnotify gconf nss libxscrnsaver alsa-lib xvfb nginx glibc-2.30-r0.apk --allow-untrusted &&\
+    apk add --update xvfb gtk+3.0-dev libnotify-dev gconf-dev nss-dev libxscrnsaver alsa-lib-dev nginx glibc-2.30-r0.apk --allow-untrusted &&\
     rm -f glibc-2.30-r0.apk &&\
 # # Install cypress and sonarqube-scanner globally so their binaries are available
 # # to use
