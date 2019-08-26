@@ -1,4 +1,4 @@
-FROM node:buster-slim
+FROM node:lts-buster-slim
 # CI=1 - Avoid too many progress messages
 # https://github.com/cypress-io/cypress/issues/1243
 # DBUS_SESSION_BUS_ADDRESS=/dev/null - "fake" dbus address to prevent errors
