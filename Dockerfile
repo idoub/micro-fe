@@ -36,6 +36,6 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 # Set the npm user as root so cypress can install correctly
     && npm config -g set user $(whoami) \
 # Install cypress and sonarqube-scanner globally so their binaries are available to use
-    && npm i -g cypress@3.4.1 sonarqube-scanner \
+    && npm i -g cypress@3.5.0 sonarqube-scanner \
 # Verify cypress install
     && cypress verify
